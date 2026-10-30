@@ -1,0 +1,16 @@
+node_modules/
+.local/
+.env
+.env.*
+!.env.example
+.dev.vars
+.wrangler/
+.vercel/
+dist/
+coverage/
+test-results/
+private/
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
