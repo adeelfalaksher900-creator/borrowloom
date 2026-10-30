@@ -9,8 +9,8 @@ A wardrobe is a private, shared collection, not a public marketplace. Real users
 ## Core journeys
 
 1. **Start a wardrobe:** choose a name, short description and a care-day buffer; create a private collection. Add garments with photo, category, size label, measurements, condition and care instructions. Copy an invitation for people you know.
-2. **Join a wardrobe:** open its invitation, choose a display name, and join. Browse garments, combine search/category/size filters, and enter collection and return dates. Availability comes from current server records.
-3. **Consider a piece:** inspect details and measurements. Optionally upload a photo or choose a clearly labelled synthetic example. Confirm permission and YouCam processing. Start one asynchronous preview, observe status, compare the completed visual with its source, and delete or download the result.
+2. **Join a wardrobe:** open its invitation and join with the display name from Your space. Browse garments, combine search/category/size filters, and enter collection and return dates. Availability comes from current server records.
+3. **Consider a piece:** inspect details and measurements. Optionally upload a photo or choose the clearly labelled official YouCam example portrait. Confirm permission and YouCam processing. Start one asynchronous preview, observe status, compare the completed visual with its source, and delete the result or download its private image.
 4. **Request dates:** send a note with the selected dates. A pending request does not block the calendar. Repeated submissions must not duplicate the request.
 5. **Manage the handoff:** the owner approves or declines. Approval checks conflicts atomically, including care days. The owner records collection and actual return. Borrowers may cancel before collection. Changes have a retained event history.
 6. **Keep control:** view your requests and memberships, save a recovery code for another browser, rotate a wardrobe invitation, revoke a member when no active loan prevents it, archive unused garments, and export your records. Recovering access must not expose another user's data.
