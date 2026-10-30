@@ -42,20 +42,24 @@ Index membership lookups, garment/circle queries, blocking loan windows and user
 | --- | --- |
 | `GET /api/session` | Create/read the current anonymous identity and memberships |
 | `PATCH /api/session` | Update the current display name |
+| `DELETE /api/session` | Sign out the current browser session |
 | `POST /api/recovery` | Create/rotate a private recovery code |
 | `POST /api/recover` | Restore an existing identity |
 | `POST /api/circles` | Create an owned wardrobe, optionally using labelled example items |
 | `GET /api/circles/:id` | Authorized wardrobe metadata, garments, availability and roles |
-| `POST /api/circles/:id/join` | Join with the invitation and display name |
+| `POST /api/join` | Join a wardrobe using its private invitation |
 | `POST /api/circles/:id/invite` | Owner rotates an invitation |
 | `POST /api/circles/:id/garments` | Owner adds a validated garment |
-| `PATCH /api/garments/:id` | Owner edits or archives a garment with version checks |
+| `PATCH /api/garments/:id` | Owner edits a garment with version checks |
+| `POST /api/garments/:id/archive` | Owner archives/restores a piece with active-loan guards |
+| `DELETE /api/circles/:id/members/:userId` | Owner revokes a member after active requests are resolved and invalidates the old invitation |
 | `GET /api/garments/:id/photo` | Authorized garment image |
 | `GET /api/loans` | Own requests plus requests the user may manage |
 | `POST /api/loans` | Idempotent date request |
 | `PATCH /api/loans/:id` | Authorized transition, atomic conflict guard and event |
 | `POST /api/tryons` | Consent, validation, budget reservation, upload and task creation |
 | `GET /api/tryons/:id` | Session-authorized status, bounded provider polling |
+| `POST /api/tryons/:id/recheck` | Explicitly recheck a paused existing task, without creating another |
 | `GET /api/tryons/:id/image` | Session-authorized completed image, never a signed provider URL |
 | `DELETE /api/tryons/:id` | Revoke result access and clean up provider task where supported |
 | `GET /api/export` | Export the current user's accessible records without credentials or other users' portraits |
